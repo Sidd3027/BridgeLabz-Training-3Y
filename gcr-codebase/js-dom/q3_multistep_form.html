@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Multi-Step Form</title>
+<style>body{font:16px Arial;max-width:500px;margin:30px auto;padding:16px}label,input{display:block;width:100%;box-sizing:border-box;margin:10px 0}input{padding:10px}button{padding:9px 14px;margin-right:8px}.step[hidden]{display:none}</style></head>
+<body><h1>Registration Form</h1><form id="multiStepForm">
+<section class="step"><label>Name <input name="name" required pattern="[A-Za-z ]+" title="Use letters and spaces only"></label></section>
+<section class="step" hidden><label>Email <input name="email" type="email" required></label></section>
+<section class="step" hidden><label>Password <input name="password" type="password" minlength="6" required></label></section>
+<div><button type="button" id="backButton">Back</button><button type="button" id="nextButton">Next</button><button type="submit" id="submitButton" hidden>Finish</button></div>
+<p id="formMessage" aria-live="polite"></p></form>
+<script src="q3_multistep_form.js"></script></body></html>

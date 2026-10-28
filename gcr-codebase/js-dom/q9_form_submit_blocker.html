@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Form Submit Validation</title>
+<style>body{font:16px Arial;max-width:500px;margin:30px auto;padding:16px}label,input{display:block;width:100%;box-sizing:border-box;margin:8px 0}input{padding:10px;border:1px solid #aaa;border-radius:4px}.invalid{border-color:red}.error{color:red;font-size:.9rem;min-height:1em}#success{color:green}</style></head>
+<body><h1>Registration Form</h1><form id="registrationForm" novalidate>
+<label>Name <input name="name" required></label><p class="error" id="nameError"></p>
+<label>Email <input name="email" type="email" required></label><p class="error" id="emailError"></p>
+<label>Password <input name="password" type="password" required></label><p class="error" id="passwordError"></p>
+<button type="submit">Submit</button></form><p id="success" aria-live="polite"></p>
+<script src="q9_form_submit_blocker.js"></script></body></html>

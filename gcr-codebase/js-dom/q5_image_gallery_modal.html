@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Image Gallery Modal</title>
+<style>body{font:16px Arial;margin:25px}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:800px}.gallery img{width:100%;height:150px;object-fit:cover;cursor:pointer;border-radius:6px}#modal{position:fixed;inset:0;background:#000b;display:flex;align-items:center;justify-content:center;padding:20px}#modal[hidden]{display:none}#modalContent{background:white;padding:12px;border-radius:8px;max-width:90vw;max-height:90vh}#modalImage{max-width:85vw;max-height:78vh;display:block}</style></head>
+<body><h1>Image Gallery</h1><div class="gallery" id="gallery">
+<img src="https://picsum.photos/id/1015/400/300" alt="Mountain river"><img src="https://picsum.photos/id/1025/400/300" alt="Dog"><img src="https://picsum.photos/id/1035/400/300" alt="Forest">
+<img src="https://picsum.photos/id/1043/400/300" alt="Waterfall"><img src="https://picsum.photos/id/1069/400/300" alt="Bridge"><img src="https://picsum.photos/id/1074/400/300" alt="Coast"></div>
+<div id="modal" hidden><div id="modalContent"><button id="closeModal" type="button">Close</button><img id="modalImage" alt=""></div></div>
+<script src="q5_image_gallery_modal.js"></script></body></html>
