@@ -1,0 +1,4 @@
+/* Assignment 10: Bootstrap 5 custom styles. Bootstrap layout and utilities are used in the HTML. */
+.product-card { overflow: hidden; border: 0; box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); transition: transform .2s ease, box-shadow .2s ease; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 1rem 2rem rgba(0,0,0,.12); }
+.product-card .card-img-top { height: 190px; object-fit: cover; }

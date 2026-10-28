@@ -1,0 +1,6 @@
+/* Assignment 10: Bootstrap 5 custom styles. Bootstrap layout and utilities are used in the HTML. */
+.pricing-intro { background: #f5f7ff; }
+.plan-card { border: 1px solid #e6eaf2; border-radius: 1rem; transition: transform .2s ease, box-shadow .2s ease; }
+.plan-card:hover { transform: translateY(-6px); box-shadow: 0 1rem 2rem rgba(22,44,90,.14); }
+.pro-plan { border-color: var(--bs-primary); box-shadow: 0 .5rem 1.5rem rgba(13,110,253,.18); }
+.feature-list li { padding: .45rem 0; }

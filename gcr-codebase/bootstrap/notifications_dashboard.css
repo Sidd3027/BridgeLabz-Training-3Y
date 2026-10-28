@@ -1,0 +1,3 @@
+/* Assignment 10: Bootstrap 5 custom styles. Bootstrap layout and utilities are used in the HTML. */
+.summary-well { border-color: #e4e8ef !important; }
+.alert { border-radius: .75rem; }

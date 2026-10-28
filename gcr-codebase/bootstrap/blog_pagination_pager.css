@@ -1,0 +1,4 @@
+/* Assignment 10: Bootstrap 5 custom styles. Bootstrap layout and utilities are used in the HTML. */
+.article-row h2 { letter-spacing: -.02em; }
+.article-row:hover h2 { color: var(--bs-primary); }
+.pagination { --bs-pagination-active-bg: var(--bs-primary); --bs-pagination-active-border-color: var(--bs-primary); }

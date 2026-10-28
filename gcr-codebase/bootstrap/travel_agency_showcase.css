@@ -1,0 +1,5 @@
+/* Assignment 10: Bootstrap 5 custom styles. Bootstrap layout and utilities are used in the HTML. */
+.destination-carousel img { height: min(62vw, 560px); min-height: 320px; object-fit: cover; filter: brightness(.72); }
+.destination-carousel .carousel-caption { bottom: 12%; text-shadow: 0 2px 12px rgba(0,0,0,.4); }
+.progress { background: #e8edf5; }
+@media (max-width: 575.98px) { .destination-carousel img { min-height: 360px; } .destination-carousel .carousel-caption { bottom: 8%; } .destination-carousel .carousel-caption p { font-size: .9rem; } }

@@ -1,0 +1,15 @@
+/* Assignment 10: Bootstrap 5 custom styles. Bootstrap layout and utilities are used in the HTML. */
+:root { --bs-primary: #6b4eff; --bs-primary-rgb: 107, 78, 255; --bs-font-sans-serif: 'DM Sans', system-ui, sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+body { font-family: var(--bs-font-sans-serif); color: #25233a; }
+.site-header { background: #fff; border-bottom: 1px solid #eeeafc; }
+.navbar-brand { color: #25233a; letter-spacing: -.04em; font-size: 1.5rem; }
+.navbar-brand span { color: var(--bs-primary); }
+.blog-hero { background: #f1efff; }
+.blog-hero h1 { letter-spacing: -.05em; }
+.blog-card { border: 1px solid #efedfa; overflow: hidden; transition: transform .2s ease, box-shadow .2s ease; }
+.blog-card:hover { transform: translateY(-4px); box-shadow: 0 1rem 2rem rgba(54,38,112,.1); }
+.blog-card .card-img-top { height: 230px; object-fit: cover; }
+.blog-card .badge { color: #4e36d5; background: #ece8ff; }
+.about-panel { background: #f8f7ff; }
+.site-footer { background: #25233a; color: #fff; }
