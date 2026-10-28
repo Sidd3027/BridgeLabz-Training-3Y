@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CSS Dashboard</title>
+    <link rel="stylesheet" href="responsive_dashboard_summary.css">
+</head>
+<body>
+    <header class="dashboard-header"><a href="#home">CSS Compass</a><span>Responsive design dashboard</span></header>
+    <div class="layout" id="home">
+        <aside class="sidebar"><h2>Contents</h2><a href="#filters">Filters</a><a href="#type">Typography</a><a href="#media">Media queries</a><a href="#cheat">Cheat sheet</a></aside>
+        <main class="main-content">
+            <div class="welcome"><h1>CSS learning dashboard</h1><p>Explore four concepts used to build flexible webpages.</p></div>
+            <section class="dashboard-cards">
+                <article class="dash-card" id="filters"><h2>Filters</h2><p>Adjust the visual appearance of images.</p><code>filter: grayscale(1);</code></article>
+                <article class="dash-card" id="type"><h2>Typography</h2><p>Scale text smoothly for different devices.</p><code>font-size: clamp(1rem, 2vw, 1.5rem);</code></article>
+                <article class="dash-card" id="media"><h2>Media Queries</h2><p>Apply a new layout at a chosen breakpoint.</p><code>@media (max-width: 750px)</code></article>
+                <article class="dash-card" id="cheat"><h2>Cheat Sheet Links</h2><p>Keep frequently used CSS patterns easy to find.</p><a href="#home">Back to top</a></article>
+            </section>
+        </main>
+    </div>
+    <footer>CSS Compass · Practice, test, and improve.</footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #eef4f7; color: #233746; }
+header { text-align: center; padding: 24px 14px; }
+header p { color: #607783; }
+.notes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; max-width: 1000px; margin: auto; padding: 20px; }
+.note { padding: 22px; border-radius: 12px; background: white; border: 1px solid #dbe6eb; transition: transform .25s ease, box-shadow .25s ease, background .25s ease; }
+.note:hover { transform: translateY(-4px); background: #e0fbfc; box-shadow: 0 10px 20px #23374618; }
+.note h2 { margin-top: 0; }
+.note p { line-height: 1.55; color: #5e7480; }
+code { display: block; overflow-wrap: anywhere; padding: 10px; border-radius: 6px; background: #f1f5f9; color: #075985; }
+@media (max-width: 700px) { .notes { grid-template-columns: 1fr; } .note { display: block; } }

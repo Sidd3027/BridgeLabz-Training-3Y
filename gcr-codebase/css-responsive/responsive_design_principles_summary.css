@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #263238; background: #f4f7f4; }
+header { text-align: center; padding: 25px 14px; }
+header p { color: #64736d; }
+.principles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding: 22px; max-width: 1150px; margin: auto; }
+.principle { padding: 24px; border-radius: 13px; background: white; border: 1px solid #dce7df; transition: background .3s ease, color .3s ease, transform .3s ease; }
+.principle:hover { background: linear-gradient(135deg, #2a9d8f, #457b9d); color: white; transform: translateY(-5px); }
+.principle p { line-height: 1.55; color: #63716b; }
+.principle:hover p { color: white; }
+code { display: block; overflow-wrap: anywhere; padding: 10px; border-radius: 6px; background: #edf3ef; color: #264653; }
+@media (max-width: 600px) { .principles { grid-template-columns: 1fr; } }

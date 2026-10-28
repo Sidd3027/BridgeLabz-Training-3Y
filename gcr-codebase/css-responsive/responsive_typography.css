@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 24px; font-family: Georgia, serif; color: #283618; background: #fefae0; }
+.reading-panel { width: min(100%, 900px); padding: clamp(24px, 6vw, 64px); text-align: center; background: white; border-radius: 16px; box-shadow: 0 8px 26px #28361812; }
+.eyebrow { color: #606c38; font: bold .8rem Arial, sans-serif; letter-spacing: .18em; }
+h1 { font-size: clamp(1.5rem, 4vw, 3rem); line-height: 1.15; margin: 18px 0; }
+p { font-size: clamp(1rem, 2vw, 1.5rem); line-height: 1.7; margin: 16px auto; max-width: 720px; }
+.small-note { font: .9rem Arial, sans-serif; color: #68754b; }
+@media (max-width: 700px) { .reading-panel { padding: 24px 18px; } h1 { line-height: 1.25; } p { line-height: 1.6; margin: 13px auto; } }

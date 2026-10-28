@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f2f5f8; color: #253247; animation: load-in .65s ease both; }
+.dashboard-header { display: flex; justify-content: space-between; align-items: center; gap: 15px; padding: 16px 5%; background: #14213d; color: white; }
+.dashboard-header a { color: white; font-size: 1.2rem; font-weight: bold; text-decoration: none; }
+.dashboard-header span { color: #dce4ef; font-size: .9rem; }
+.layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); min-height: calc(100vh - 110px); }
+.sidebar { display: flex; flex-direction: column; gap: 8px; padding: 22px 16px; background: #e2eaf3; }
+.sidebar h2 { font-size: 1.1rem; }
+.sidebar a { padding: 10px; border-radius: 6px; color: #253247; text-decoration: none; transition: background .2s ease; }
+.sidebar a:hover { background: #c8d8e8; }
+.main-content { min-width: 0; padding: 24px; }
+.welcome { margin-bottom: 20px; }
+.welcome p { color: #627184; }
+.dashboard-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.dash-card { padding: 21px; background: white; border: 1px solid #dce4ed; border-radius: 12px; box-shadow: 0 4px 12px #14213d0d; transition: transform .25s ease, box-shadow .25s ease; }
+.dash-card:hover { transform: scale(1.025); box-shadow: 0 12px 22px #14213d1c; }
+.dash-card p { color: #627184; line-height: 1.5; }
+code { display: block; overflow-wrap: anywhere; padding: 8px; background: #f1f5f9; border-radius: 5px; color: #355070; }
+.dash-card a { color: #1d70a2; }
+footer { text-align: center; padding: 16px; background: #14213d; color: white; }
+@keyframes load-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 750px) { .layout { grid-template-columns: 1fr; } .sidebar { flex-direction: row; flex-wrap: wrap; } .sidebar h2 { width: 100%; } .dashboard-cards { grid-template-columns: 1fr; } .dashboard-header { flex-direction: column; } .main-content { padding: 18px; } }

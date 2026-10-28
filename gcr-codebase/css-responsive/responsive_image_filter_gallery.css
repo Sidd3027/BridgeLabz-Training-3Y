@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #263238; background: #f5f3ef; }
+header, footer { text-align: center; padding: 22px 16px; }
+header p { max-width: 650px; margin: auto; color: #68747d; line-height: 1.5; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 22px; max-width: 1200px; margin: auto; }
+figure { margin: 0; background: white; overflow: hidden; border-radius: 12px; box-shadow: 0 5px 16px #26323818; }
+figure img { display: block; width: 100%; height: 190px; object-fit: cover; transition: filter .4s ease, transform .4s ease; }
+.blur img { filter: blur(2px); }
+.gray img { filter: grayscale(1); }
+.sepia img { filter: sepia(1); }
+.bright img { filter: brightness(1.45); }
+.contrast img { filter: contrast(1.8); }
+.hue img { filter: hue-rotate(115deg); }
+figure:hover img { filter: none; transform: scale(1.03); }
+figcaption { padding: 12px; text-align: center; font-weight: bold; }
+@media (max-width: 600px) { .gallery { grid-template-columns: 1fr; } figure img { height: 230px; } }
