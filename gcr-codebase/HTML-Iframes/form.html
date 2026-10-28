@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Form Submission Example</title></head>
+<body>
+    <h1>Submit a Form</h1>
+    <!-- The form targets the iframe so result.html loads after Submit. -->
+    <form action="result.html" method="get" target="resultFrame">
+        <label for="visitor-name">Your name:</label><input type="text" id="visitor-name" name="name" required>
+        <button type="submit">Submit</button>
+    </form>
+    <iframe name="resultFrame" src="result.html" title="Form submission result" width="500" height="150"></iframe>
+</body>
+</html>
