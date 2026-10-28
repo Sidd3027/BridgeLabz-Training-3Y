@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f1faee; color: #1d3557; }
+header, footer { text-align: center; padding: 20px; }
+header p { color: #5c6f7b; }
+/* Element selector: styles every paragraph. */
+p { line-height: 1.55; }
+/* Class selector: styles any element with this class. */
+.highlight { background: #d8f3dc; padding: 8px; border-left: 4px solid #40916c; }
+/* ID selector: targets the element with this unique ID. */
+#special-note { color: #c1121f; font-weight: bold; }
+/* Descendant combinator: links anywhere inside main. */
+main a { color: #0077b6; }
+/* Attribute selector: only text inputs receive this rule. */
+input[type="text"] { display: block; width: 100%; padding: 10px; border: 1px solid #9fb3c8; border-radius: 6px; }
+/* Child combinator: direct list items of .steps. */
+.steps > li { padding: 6px; }
+/* Adjacent sibling: the paragraph immediately after the list. */
+.steps + .after-list { color: #2a9d8f; font-weight: bold; }
+/* General sibling: paragraphs after the list in the same parent. */
+.steps ~ p { border-bottom: 1px dashed #b8c9c5; }
+main { display: flex; justify-content: center; align-items: stretch; flex-wrap: wrap; gap: 20px; padding: 10px 20px 28px; }
+section { width: min(100%, 390px); padding: 22px; border-radius: 12px; background: white; box-shadow: 0 5px 15px #00000010; }

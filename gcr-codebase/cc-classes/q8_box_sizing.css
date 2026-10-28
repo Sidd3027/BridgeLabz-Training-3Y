@@ -1,0 +1,13 @@
+/* Keep the default model for the page; override it for the first example. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f7f7f2; color: #283618; }
+header { text-align: center; padding: 25px 12px; }
+header p { color: #606c38; }
+.comparison { display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; gap: 32px; padding: 20px; }
+.example { width: min(100%, 360px); text-align: center; }
+.measured { width: 240px; min-height: 220px; padding: 24px; border: 8px solid #283618; margin: 20px auto; border-radius: 12px; text-align: left; }
+.content-example { box-sizing: content-box; background: #dda15e; }
+.border-example { box-sizing: border-box; background: #bc6c25; color: white; }
+.measured p { margin: 8px 0; }
+.explain { line-height: 1.55; color: #606c38; }
+@media (max-width: 600px) { .comparison { gap: 12px; } }

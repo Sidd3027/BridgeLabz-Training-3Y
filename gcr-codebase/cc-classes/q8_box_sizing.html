@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing Comparison</title>
+    <link rel="stylesheet" href="q8_box_sizing.css">
+</head>
+<body>
+    <header><h1>Box-Sizing Comparison</h1><p>The same width value can create different outer sizes.</p></header>
+    <main class="comparison">
+        <section class="example">
+            <h2>content-box</h2>
+            <div class="measured content-example"><p>Width: 240px</p><p>Padding: 24px</p><p>Border: 8px</p></div>
+            <p class="explain">The width applies to content only. Padding and border are added outside it.</p>
+        </section>
+        <section class="example">
+            <h2>border-box</h2>
+            <div class="measured border-example"><p>Width: 240px</p><p>Padding: 24px</p><p>Border: 8px</p></div>
+            <p class="explain">The declared width includes the content, padding and border.</p>
+        </section>
+    </main>
+</body>
+</html>

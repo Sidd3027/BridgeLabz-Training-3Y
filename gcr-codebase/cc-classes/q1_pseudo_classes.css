@@ -1,0 +1,20 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f7fb; color: #243047; }
+header, footer { text-align: center; padding: 22px 14px; }
+header p { color: #637087; }
+.examples { display: flex; justify-content: center; align-items: stretch; flex-wrap: wrap; gap: 18px; padding: 20px; }
+.demo { width: 245px; padding: 20px; background: white; border: 1px solid #dce3ee; border-radius: 12px; }
+.demo h2 { margin-top: 0; }
+.demo p { line-height: 1.5; color: #53627a; }
+.demo-link, .focus-button, .active-button { display: inline-block; padding: 10px 13px; border-radius: 7px; border: 1px solid #4263a6; }
+.demo-link { color: #244b91; text-decoration: none; }
+/* Hover pseudo-class changes the link when the pointer is over it. */
+.demo-link:hover { color: white; background: #244b91; }
+/* Focus pseudo-class makes keyboard focus easy to see. */
+.focus-button:focus { outline: 3px solid #f4a261; outline-offset: 3px; }
+/* Active pseudo-class applies only while the button is pressed. */
+.active-button:active { background: #d1495b; color: white; transform: scale(.96); }
+.number-list { padding-left: 22px; }
+.number-list li { padding: 7px; border-radius: 4px; }
+/* nth-child selects list items by their position. */
+.number-list li:nth-child(even) { background: #dbeafe; }

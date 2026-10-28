@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font-family: Arial, sans-serif; background: #111827; color: #f9fafb; }
+header { text-align: center; padding: 24px 12px; }
+header p { color: #cbd5e1; }
+.animation-stage { min-height: 60vh; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 38px; padding: 24px; }
+.animation-item { width: 230px; min-height: 210px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 24px; background: #1f2937; border-radius: 14px; }
+.animation-item p { color: #cbd5e1; }
+.moving-box { width: 55px; height: 55px; background: #f4a261; border-radius: 9px; animation: slide 2.8s ease-in-out infinite alternate; }
+.bouncing-ball { width: 48px; height: 48px; background: #80ed99; border-radius: 50%; animation: bounce 1s ease-in-out infinite; animation-delay: .25s; }
+.color-title { text-align: center; animation: colour-change 3s ease-in-out infinite alternate; }
+@keyframes slide { from { transform: translateX(-48px) rotate(0); } to { transform: translateX(48px) rotate(160deg); } }
+@keyframes bounce { 0%, 100% { transform: translateY(-15px); } 50% { transform: translateY(28px); } }
+@keyframes colour-change { from { color: #80ed99; } to { color: #f4a261; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }

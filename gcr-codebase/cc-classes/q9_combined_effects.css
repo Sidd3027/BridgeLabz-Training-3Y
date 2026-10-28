@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #eef4f8; color: #1f3447; }
+header { text-align: center; padding: 26px 14px; }
+header p { color: #5d7180; }
+.effect-row { display: flex; justify-content: center; align-items: stretch; flex-wrap: wrap; gap: 22px; padding: 24px; }
+.effect-card { width: 245px; padding: 25px; text-align: center; text-decoration: none; color: inherit; background: white; border: 1px solid #d7e3eb; border-radius: 16px; box-shadow: 0 5px 12px #1f344710; transition: all .3s ease; }
+.effect-card:hover { transform: translateY(-7px) scale(1.03); background: #e0fbfc; border-color: #2a9d8f; box-shadow: 0 14px 24px #1f34472b; }
+.effect-card:focus { outline: 3px solid #f4a261; outline-offset: 4px; }
+.effect-card:active { transform: scale(.97); background: #c9f2ef; }
+.symbol { display: inline-grid; place-items: center; width: 54px; height: 54px; border-radius: 50%; background: #2a9d8f; color: white; font-size: 1.6rem; transition: transform .3s ease; }
+.effect-card:hover .symbol { transform: rotate(12deg); }
+.effect-card p { line-height: 1.5; color: #5d7180; }

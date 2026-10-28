@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 24px; font-family: Arial, sans-serif; background: #f8f9fa; color: #263238; }
+.button-page { width: min(100%, 800px); padding: 32px; text-align: center; background: white; border-radius: 16px; box-shadow: 0 8px 26px #102a4315; }
+.button-row { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 16px; margin: 28px 0; }
+.btn { padding: 12px 22px; border: 2px solid transparent; border-radius: 8px; font: inherit; cursor: pointer; box-shadow: 0 3px 7px #00000014; transition: all .25s ease; }
+.primary { background: #4361ee; color: white; }
+.secondary { background: #e9ecef; color: #263238; }
+.outline { background: white; color: #4361ee; border-color: #4361ee; }
+.btn:not(:disabled):hover { transform: translateY(-3px); box-shadow: 0 7px 12px #00000020; }
+.btn:not(:disabled):active { transform: scale(.96); }
+/* Focus outline remains visible for keyboard navigation. */
+.btn:focus { outline: 3px solid #f4a261; outline-offset: 3px; }
+/* Disabled controls look muted and do not show a pointer cursor. */
+.btn:disabled { background: #d5d9df; color: #7a818a; cursor: not-allowed; box-shadow: none; }
+.hint { color: #65727e; font-size: .9rem; }
