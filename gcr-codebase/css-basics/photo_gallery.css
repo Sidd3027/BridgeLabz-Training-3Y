@@ -1,0 +1,6 @@
+/* Q6: Responsive CSS-only image grid with caption overlays. */
+*{box-sizing:border-box}body{margin:0;background:#eef2f4;color:#1c2b35;font:16px/1.5 Arial,sans-serif}header{text-align:center;padding:2rem 1rem;background:#173b4b;color:white}header h1{margin:0;font-size:2.5rem}
+.gallery{max-width:1200px;margin:2rem auto;padding:0 1rem;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}.photo{position:relative;overflow:hidden;margin:0;border-radius:12px;box-shadow:0 8px 20px #102d3a30;isolation:isolate}
+.photo img{display:block;width:100%;height:250px;object-fit:cover;transition:transform .3s ease}.photo figcaption{position:absolute;inset:auto 0 0;padding:1rem;color:white;font-weight:bold;background:linear-gradient(transparent,#071923e8);opacity:0;transition:opacity .3s ease}
+.photo:hover img{transform:scale(1.1)}.photo:hover figcaption{opacity:1}footer{text-align:center;padding:1rem}
+@media(max-width:800px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:500px){.gallery{grid-template-columns:1fr}.photo img{height:230px}.photo figcaption{opacity:1}}

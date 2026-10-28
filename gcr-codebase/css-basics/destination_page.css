@@ -1,0 +1,9 @@
+/* Q2: Full-width sections use linear/radial gradients and fixed backgrounds. */
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Georgia,serif;color:#202a24;background:#f7f5ef;line-height:1.7}
+.hero-header{padding:2rem 6%;background:#173d35;color:white;display:flex;align-items:center;justify-content:space-between;gap:1rem}.hero-header h1{font-size:clamp(2rem,5vw,3.5rem);margin:0}
+nav{display:flex;gap:1rem;flex-wrap:wrap}nav a{color:white;font-weight:bold}.section{min-height:65vh;padding:5rem 8%;display:flex;align-items:center;background-size:cover;background-position:center;background-attachment:fixed}
+.content{max-width:760px;padding:2rem;border:1px solid #ffffff99;border-radius:12px;background:rgba(255,255,255,.88)}h2{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:800;margin-top:0}
+.culture{background-image:linear-gradient(120deg,#1e574cdd,#d4a96add),url("https://picsum.photos/seed/kyoto-culture/1600/900")}
+.nature{background-image:radial-gradient(circle at top right,#e2f2d8e8,#417a67bb),url("https://picsum.photos/seed/kyoto-garden/1600/900")}
+.visit{background-image:linear-gradient(135deg,#203a43cc,#2c7744cc),url("https://picsum.photos/seed/kyoto-street/1600/900")}footer{text-align:center;padding:1rem;background:#173d35;color:white}
+@media(max-width:650px){.hero-header{align-items:flex-start;flex-direction:column}.section{background-attachment:scroll;padding:2rem 1rem}.content{padding:1.2rem}}

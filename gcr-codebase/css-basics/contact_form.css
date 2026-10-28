@@ -1,0 +1,5 @@
+/* Q7: Flexbox centers a semantic form horizontally and vertically. */
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#eaf1f8;color:#183044;font:16px/1.5 Arial,sans-serif}.contact-page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem 1rem}
+.contact-card{width:min(100%,560px);padding:2rem;border-radius:16px;background:#fff;box-shadow:0 12px 35px #173b5520}.contact-card h1{margin-top:0;color:#174c72;font-size:2rem}.field{margin:1rem 0}label{display:block;margin-bottom:.4rem;font-weight:bold}
+input,textarea{width:100%;padding:.85rem;border:1px solid #b7c7d4;border-radius:8px;background:#fbfdff;color:#183044;font:inherit;box-shadow:0 2px 5px #173b5508}input:focus,textarea:focus{outline:3px solid #8ac5f7;border-color:#1769aa}textarea{resize:vertical}
+button{width:100%;padding:.9rem;border:0;border-radius:8px;background:#1769aa;color:white;font:inherit;font-weight:bold;cursor:pointer}button:hover{background:#124f82}

@@ -1,0 +1,6 @@
+/* Q9: Three-column magazine text with a spanning title and floated image. */
+*{box-sizing:border-box}body{margin:0;background:#e9e3d8;color:#282b2c;font:17px/1.8 Georgia,serif}.magazine{max-width:1200px;margin:2rem auto;padding:clamp(1rem,4vw,3rem);background:#fffdf8;box-shadow:0 8px 28px #392d1c15}
+.magazine-header{text-align:center;border-bottom:2px solid #292f2d;padding-bottom:1.5rem;margin-bottom:1.5rem}.issue{font:700 .75rem Arial,sans-serif;letter-spacing:.2em;color:#9b4e35}.magazine-header h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.1;margin:.5rem auto;max-width:850px}
+.columns{column-count:3;column-gap:2.2rem;column-rule:1px solid #ddd3c6;text-align:justify}.columns h2{column-span:all;font:700 clamp(1.5rem,3vw,2.2rem) Arial,sans-serif;text-align:left;border-bottom:1px solid #c9b8a5;padding-bottom:.6rem;margin-top:0}.columns p{margin:0 0 1.2rem;break-inside:avoid}
+.float-image{float:left;width:45%;max-width:180px;margin:0 .9rem .6rem 0;border-radius:5px;box-shadow:0 4px 12px #0002}footer{text-align:center;padding:1rem;background:#292f2d;color:white}
+@media(max-width:850px){.columns{column-count:2}}@media(max-width:550px){.columns{column-count:1}.float-image{width:40%}}

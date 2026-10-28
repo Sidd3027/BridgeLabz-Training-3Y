@@ -1,0 +1,9 @@
+/* Q1: Flex layout keeps footer at the bottom; fixed header stays visible. */
+*{box-sizing:border-box} body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:#f3f6fb;color:#1f2937;font-family:Arial,sans-serif;line-height:1.6}
+.site-header{position:fixed;z-index:10;top:0;left:0;width:100%;min-height:4.5rem;padding:.7em 4%;display:flex;align-items:center;justify-content:space-between;background:#132238;color:#fff;box-shadow:0 2px 8px #0003}
+.site-header h1{font-size:1.35rem;margin:0} nav{display:flex;gap:1.2rem} nav a{color:#fff;text-decoration:none;font-weight:700} nav a:hover{text-decoration:underline}
+.page-main{flex:1;width:min(100% - 2rem,960px);margin:0 auto;padding-top:6rem}.intro{display:flex;align-items:center;gap:2rem;padding:3vh 2rem;background:#fff;border-radius:14px;box-shadow:0 6px 20px #15243a12}
+.profile{width:clamp(140px,25%,220px);aspect-ratio:1;object-fit:cover;border-radius:50%;border:5px solid #b9d8f2}.intro h2{font-size:2rem;margin-top:0;color:#153e67}
+.button{display:inline-block;background:#1769aa;color:#fff;padding:.7em 1.2em;border-radius:6px;text-decoration:none}.about-card{margin:1.5rem 0;padding:1.5rem 2rem;border-left:5px solid #1769aa;background:#e2effa}
+.site-footer{margin-top:2rem;padding:1rem;text-align:center;background:#132238;color:#fff}
+@media(max-width:600px){.site-header{align-items:flex-start;gap:.4rem;flex-direction:column}.page-main{padding-top:8rem}.intro{flex-direction:column;text-align:center}.profile{width:45vw}nav{gap:.8rem}}
