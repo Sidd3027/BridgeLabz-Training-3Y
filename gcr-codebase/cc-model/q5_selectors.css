@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f1de; color: #2b2d42; }
+header, footer { text-align: center; padding: 20px; }
+.intro { color: #5f6475; }
+/* Descendant selector: paragraphs inside the header */
+header p { max-width: 600px; margin: 0 auto; }
+/* Child combinator (>): only direct list items of .topics */
+.topics > li { padding: 9px 12px; border-bottom: 1px solid #ddd; }
+/* nth-child pseudo-class: style alternating positions */
+.topics li:nth-child(odd) { background: #e9edc9; }
+/* Adjacent sibling combinator (+): paragraph immediately after h2 */
+h2 + p { margin-top: 8px; }
+/* General sibling combinator (~): all paragraphs after the first h2 in this panel */
+.panel h2 ~ p { color: #5f6475; }
+/* Attribute selector: selects input elements with type="text" */
+input[type="text"] { width: 100%; padding: 11px; border: 1px solid #9a9db0; border-radius: 7px; }
+/* Focus pseudo-class: changes the field when selected */
+input[type="text"]:focus { outline: 3px solid #f4a261; border-color: #e07a5f; }
+/* Attribute selector: links whose address starts with https */
+a[href^="https"] { color: #386641; font-weight: bold; }
+/* Hover pseudo-class: feedback for pointer users */
+a:hover { color: #bc4749; }
+/* Pseudo-element before: adds a decorative mark before headings */
+.panel h2::before { content: "◆ "; color: #e07a5f; }
+/* Pseudo-element after: adds a small label after links */
+.links a::after { content: " ↗"; font-size: .8em; }
+main { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; padding: 10px 20px 28px; }
+.panel { width: min(100%, 360px); background: white; padding: 22px; border-radius: 12px; box-shadow: 0 5px 14px #00000012; }
+.topics { padding-left: 0; list-style: none; }
+.links a { text-decoration: none; }

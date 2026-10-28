@@ -1,0 +1,33 @@
+/* Basic page setup */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f6fa;
+    color: #243247;
+}
+.page-heading { text-align: center; padding: 28px 16px 12px; }
+.page-heading p { color: #53657a; }
+.box-row {
+    display: flex;                 /* Places the examples in one row */
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 24px;
+}
+.sample {
+    width: 220px;
+    min-height: 185px;
+    background: white;
+    border-color: #457b9d;
+    transition: border-color 0.3s ease;
+}
+.sample:hover { border-color: #e76f51; }
+.solid { border: 3px solid #457b9d; padding: 18px; }
+.dashed { border: 3px dashed #457b9d; padding: 12px 24px; }
+.double { border: 5px double #457b9d; border-radius: 18px; padding: 22px 14px; }
+.groove { border: 6px groove #457b9d; border-radius: 8px; padding: 28px 16px 12px; }
+.sample h2 { font-size: 1.1rem; margin-top: 0; }
+.sample p { line-height: 1.5; }
+footer { text-align: center; padding: 18px; color: #53657a; }

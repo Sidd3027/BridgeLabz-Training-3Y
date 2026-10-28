@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 24px; font-family: Arial, sans-serif; background: #e8f1f2; color: #243b4a; }
+.form-card { width: min(100%, 430px); padding: 28px; background: white; border-radius: 14px; box-shadow: 0 8px 24px #17324d18; }
+.form-card h1 { margin-top: 0; }
+.form-card p { color: #607783; line-height: 1.5; }
+form { display: flex; flex-direction: column; gap: 10px; }
+label { font-weight: bold; margin-top: 7px; }
+input, textarea { width: 100%; padding: 11px 12px; border: 1px solid #a9bbc3; border-radius: 7px; font: inherit; background: #fbfdfe; }
+/* Different outline examples are shown on focus. */
+input:focus { outline: 3px solid #4d908e; outline-offset: 2px; border-color: #4d908e; }
+textarea:focus { outline: 3px dashed #e09f3e; outline-offset: 3px; border-color: #e09f3e; }
+button { margin-top: 8px; padding: 12px; border: 0; border-radius: 7px; background: #315c68; color: white; font-size: 1rem; cursor: pointer; }
+button:hover { background: #23434c; }
+.note { font-size: .85rem; margin-bottom: 0; }

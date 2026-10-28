@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exploration</title>
+    <link rel="stylesheet" href="q8_box_model.css">
+</head>
+<body>
+    <header><h1>Understanding the Box Model</h1><p>Each layer adds space around the content.</p></header>
+    <main class="comparison">
+        <section class="demo">
+            <h2>Default content-box</h2>
+            <div class="margin-layer default-margin">
+                <div class="border-layer">
+                    <div class="padding-layer">
+                        <div class="content-layer">Content<br>200px wide</div>
+                    </div>
+                </div>
+            </div>
+            <p>The declared width covers only the content. Padding and border add to the total width.</p>
+        </section>
+        <section class="demo">
+            <h2>With border-box</h2>
+            <div class="margin-layer border-margin">
+                <div class="border-layer">
+                    <div class="padding-layer border-box-example">Content<br>200px total width</div>
+                </div>
+            </div>
+            <p>With border-box, the declared width includes content, padding and border.</p>
+        </section>
+    </main>
+</body>
+</html>

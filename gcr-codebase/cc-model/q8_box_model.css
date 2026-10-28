@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f3f6f4; color: #26332e; }
+header { text-align: center; padding: 22px 12px; }
+header p { color: #66756d; }
+.comparison { display: flex; justify-content: center; align-items: flex-start; gap: 36px; flex-wrap: wrap; padding: 20px; }
+.demo { width: min(100%, 360px); text-align: center; }
+.demo p { line-height: 1.5; color: #53645b; }
+.margin-layer { background: #f4a261; padding: 22px; outline: 2px dashed #bc6c25; }
+.border-layer { border: 8px solid #386641; background: #a7c957; padding: 0; }
+.padding-layer { background: #d9ed92; padding: 24px; }
+.content-layer { background: #fff; width: 200px; min-height: 90px; margin: auto; display: grid; place-content: center; border: 1px solid #8a9a5b; }
+.border-box-example { width: 200px; min-height: 140px; margin: auto; border: 1px solid #8a9a5b; display: grid; place-content: center; box-sizing: border-box; }
+.default-margin { padding: 22px; }
+.border-margin { padding: 22px; }
