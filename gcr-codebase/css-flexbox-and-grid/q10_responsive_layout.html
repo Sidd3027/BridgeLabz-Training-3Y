@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Flexbox and Grid Layout</title>
+  <link rel="stylesheet" href="q10_responsive_layout.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">GridFlex</a>
+    <nav aria-label="Main navigation"><a href="#article">Article</a><a href="#sidebar">Resources</a><a href="#contact">Contact</a></nav>
+  </header>
+  <main class="layout" id="home">
+    <article class="article" id="article">
+      <h1 class="animated-title">A Balanced Responsive Layout</h1>
+      <p>This page combines CSS Grid for the main structure and Flexbox for the header and article cards. Resize the browser to see the layout adapt.</p>
+      <section class="article-cards" aria-label="Highlights">
+        <div class="info-card"><h2>Flexbox</h2><p>Aligns items in a row or column.</p></div>
+        <div class="info-card"><h2>CSS Grid</h2><p>Organizes content in two dimensions.</p></div>
+        <div class="info-card"><h2>Responsive</h2><p>Adapts the page to smaller screens.</p></div>
+      </section>
+    </article>
+    <aside class="sidebar" id="sidebar">
+      <h2>Quick Resources</h2>
+      <p>Use semantic HTML to describe your content.</p>
+      <p>Use Grid for page areas and Flexbox for aligned items.</p>
+      <p>Test layouts at multiple screen widths.</p>
+    </aside>
+  </main>
+  <footer id="contact">© 2026 GridFlex. Built with HTML and CSS.</footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #18302b; background: #f4f8f6; }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.25rem 6%; background: #123c35; color: white; }
+.site-header h1 { margin: 0; font-size: 1.5rem; }
+nav { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+nav a { color: white; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+.hero { min-height: 70vh; display: flex; align-items: center; justify-content: center; gap: 3rem; padding: 3rem 8%; }
+.about, .hero-image { flex: 1; min-width: 0; }
+.about { max-width: 560px; }
+.about h2 { font-size: clamp(2rem, 4vw, 3rem); margin-top: 0; }
+.about p { line-height: 1.8; }
+.hero-image img { display: block; width: 100%; max-height: 380px; object-fit: cover; border-radius: 18px; }
+footer { text-align: center; padding: 1.25rem; background: #123c35; color: white; }
+@media (max-width: 700px) {
+  .site-header, .hero { flex-direction: column; text-align: center; }
+  .site-header nav { justify-content: center; }
+  .hero { gap: 1.5rem; padding: 2rem 6%; }
+  .hero-image { width: 100%; }
+}
